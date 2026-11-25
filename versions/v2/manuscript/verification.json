@@ -1,0 +1,386 @@
+{
+  "arithmetic": "exact rational coefficients in Q[r]/(r^2-d)",
+  "coverage": "Finite cyclic dimensions 2 through 16 and five product groups; the universal statements have written proofs in note.tex.",
+  "status": "pass",
+  "cyclic_shields": [
+    {
+      "moduli": [
+        2
+      ],
+      "dimension": 2,
+      "shield_entries_checked": 16,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": true,
+      "same_shield_mismatches": 0
+    },
+    {
+      "moduli": [
+        3
+      ],
+      "dimension": 3,
+      "shield_entries_checked": 81,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 36
+    },
+    {
+      "moduli": [
+        4
+      ],
+      "dimension": 4,
+      "shield_entries_checked": 256,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 64
+    },
+    {
+      "moduli": [
+        5
+      ],
+      "dimension": 5,
+      "shield_entries_checked": 625,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 200
+    },
+    {
+      "moduli": [
+        6
+      ],
+      "dimension": 6,
+      "shield_entries_checked": 1296,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 288
+    },
+    {
+      "moduli": [
+        7
+      ],
+      "dimension": 7,
+      "shield_entries_checked": 2401,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 588
+    },
+    {
+      "moduli": [
+        8
+      ],
+      "dimension": 8,
+      "shield_entries_checked": 4096,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 768
+    },
+    {
+      "moduli": [
+        9
+      ],
+      "dimension": 9,
+      "shield_entries_checked": 6561,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 1296
+    },
+    {
+      "moduli": [
+        10
+      ],
+      "dimension": 10,
+      "shield_entries_checked": 10000,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 1600
+    },
+    {
+      "moduli": [
+        11
+      ],
+      "dimension": 11,
+      "shield_entries_checked": 14641,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 2420
+    },
+    {
+      "moduli": [
+        12
+      ],
+      "dimension": 12,
+      "shield_entries_checked": 20736,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 2880
+    },
+    {
+      "moduli": [
+        13
+      ],
+      "dimension": 13,
+      "shield_entries_checked": 28561,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 4056
+    },
+    {
+      "moduli": [
+        14
+      ],
+      "dimension": 14,
+      "shield_entries_checked": 38416,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 4704
+    },
+    {
+      "moduli": [
+        15
+      ],
+      "dimension": 15,
+      "shield_entries_checked": 50625,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 6300
+    },
+    {
+      "moduli": [
+        16
+      ],
+      "dimension": 16,
+      "shield_entries_checked": 65536,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 7168
+    }
+  ],
+  "product_group_shields": [
+    {
+      "moduli": [
+        2,
+        2
+      ],
+      "dimension": 4,
+      "shield_entries_checked": 256,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": true,
+      "same_shield_mismatches": 0
+    },
+    {
+      "moduli": [
+        2,
+        3
+      ],
+      "dimension": 6,
+      "shield_entries_checked": 1296,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 288
+    },
+    {
+      "moduli": [
+        2,
+        2,
+        2
+      ],
+      "dimension": 8,
+      "shield_entries_checked": 4096,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": true,
+      "same_shield_mismatches": 0
+    },
+    {
+      "moduli": [
+        3,
+        3
+      ],
+      "dimension": 9,
+      "shield_entries_checked": 6561,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": false,
+      "same_shield_mismatches": 1296
+    },
+    {
+      "moduli": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dimension": 16,
+      "shield_entries_checked": 65536,
+      "sum_to_difference_identity": true,
+      "same_shield_identity": true,
+      "same_shield_mismatches": 0
+    }
+  ],
+  "cyclic_states": [
+    {
+      "dimension": 2,
+      "state_nonzero_entries": 26,
+      "partial_transpose_nonzero_entries": 26,
+      "density_and_transpose_identity": true,
+      "state_rank": 8,
+      "partial_transpose_rank": 10,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 3,
+      "state_nonzero_entries": 66,
+      "partial_transpose_nonzero_entries": 66,
+      "density_and_transpose_identity": true,
+      "state_rank": 15,
+      "partial_transpose_rank": 21,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 4,
+      "state_nonzero_entries": 132,
+      "partial_transpose_nonzero_entries": 132,
+      "density_and_transpose_identity": true,
+      "state_rank": 24,
+      "partial_transpose_rank": 36,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 5,
+      "state_nonzero_entries": 230,
+      "partial_transpose_nonzero_entries": 230,
+      "density_and_transpose_identity": true,
+      "state_rank": 35,
+      "partial_transpose_rank": 55,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 6,
+      "state_nonzero_entries": 366,
+      "partial_transpose_nonzero_entries": 366,
+      "density_and_transpose_identity": true,
+      "state_rank": 48,
+      "partial_transpose_rank": 78,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 7,
+      "state_nonzero_entries": 546,
+      "partial_transpose_nonzero_entries": 546,
+      "density_and_transpose_identity": true,
+      "state_rank": 63,
+      "partial_transpose_rank": 105,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 8,
+      "state_nonzero_entries": 776,
+      "partial_transpose_nonzero_entries": 776,
+      "density_and_transpose_identity": true,
+      "state_rank": 80,
+      "partial_transpose_rank": 136,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 9,
+      "state_nonzero_entries": 1062,
+      "partial_transpose_nonzero_entries": 1062,
+      "density_and_transpose_identity": true,
+      "state_rank": 99,
+      "partial_transpose_rank": 171,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 10,
+      "state_nonzero_entries": 1410,
+      "partial_transpose_nonzero_entries": 1410,
+      "density_and_transpose_identity": true,
+      "state_rank": 120,
+      "partial_transpose_rank": 210,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 11,
+      "state_nonzero_entries": 1826,
+      "partial_transpose_nonzero_entries": 1826,
+      "density_and_transpose_identity": true,
+      "state_rank": 143,
+      "partial_transpose_rank": 253,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 12,
+      "state_nonzero_entries": 2316,
+      "partial_transpose_nonzero_entries": 2316,
+      "density_and_transpose_identity": true,
+      "state_rank": 168,
+      "partial_transpose_rank": 300,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 13,
+      "state_nonzero_entries": 2886,
+      "partial_transpose_nonzero_entries": 2886,
+      "density_and_transpose_identity": true,
+      "state_rank": 195,
+      "partial_transpose_rank": 351,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 14,
+      "state_nonzero_entries": 3542,
+      "partial_transpose_nonzero_entries": 3542,
+      "density_and_transpose_identity": true,
+      "state_rank": 224,
+      "partial_transpose_rank": 406,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 15,
+      "state_nonzero_entries": 4290,
+      "partial_transpose_nonzero_entries": 4290,
+      "density_and_transpose_identity": true,
+      "state_rank": 255,
+      "partial_transpose_rank": 465,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    },
+    {
+      "dimension": 16,
+      "state_nonzero_entries": 5136,
+      "partial_transpose_nonzero_entries": 5136,
+      "density_and_transpose_identity": true,
+      "state_rank": 288,
+      "partial_transpose_rank": 528,
+      "orthogonality_and_normalization": true,
+      "fisher_information": "16*sqrt(d)/(1+sqrt(d))",
+      "noise_parameter_checks": 4
+    }
+  ],
+  "total_shield_entries_checked": 321592,
+  "negative_control": "Using the difference shield on both sides fails for Z/3Z."
+}

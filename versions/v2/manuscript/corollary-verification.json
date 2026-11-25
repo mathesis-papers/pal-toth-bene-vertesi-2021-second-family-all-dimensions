@@ -1,0 +1,130 @@
+{
+  "status": "pass",
+  "arithmetic": "Exact rational coefficients in Q[r]/(r^2-d), extended by s^2=(p-1/2)^2+4p^2 for the threshold.",
+  "coverage": "Cyclic dimensions 2 through 16; six weight pairs and four visibilities per pair. Universal claims have written proofs in note.tex.",
+  "dimensions": [
+    {
+      "dimension": 2,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 3,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 4,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 5,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 6,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 7,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 8,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 9,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 10,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 11,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 12,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 13,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 14,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 15,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    },
+    {
+      "dimension": 16,
+      "threshold_polynomial_zero": true,
+      "weighted_spectral_cases": 6,
+      "weighted_noise_cases": 24,
+      "variance_defect_identity": true,
+      "equal_weight_gain_maximum": true
+    }
+  ],
+  "total_weighted_spectral_cases": 90,
+  "total_weighted_noise_cases": 360,
+  "threshold_polynomial_cases": 15
+}

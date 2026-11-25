@@ -1,0 +1,15 @@
+{
+  "id": "pal-toth-bene-vertesi-2021-second-family-all-dimensions",
+  "revision": 2,
+  "problem_ids": ["pal-toth-bene-vertesi-2021-second-family-all-dimensions"],
+  "topic": "All-dimension existence of the second family in Section V, after Eq. (69), of Physical Review Research 3, 023101 (2021)",
+  "title": "Resolving the all-dimension second-family claim of Pál et al.: Section V, paragraph after Eq. (69), p. 023101-8, Physical Review Research 3, 023101 (2021)",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We establish the assertion that second-family states exist for all d in Pál, Tóth, Bene and Vértesi, Section V, paragraph after Eq. (69), p. 023101-8 of Physical Review Research 3, 023101 (2021). Cyclic permutation matrices and sum-indexed shield vectors satisfy all of the defining conditions for every integer d >= 2. Their partial-transpose identity gives explicit positive-partial-transpose states on C^(2d) tensor C^(2d), of ranks d^2+2d and 2d^2+d before and after partial transposition, with quantum Fisher information 16 sqrt(d)/(1+sqrt(d)) for the Hamiltonian of that paper. The construction extends to every finite abelian group; its shield projectors have explicit product decompositions. We also obtain the white-noise threshold and the exact dependence on two local Hamiltonian weights, extending the source's formulas to every dimension.",
+  "summary": "Cyclic shifts and sum-indexed shields establish second-family existence for every d >= 2. Written proofs give the spectra, Fisher information, exact noise threshold, two-weight Hamiltonian formulas and finite-abelian-group extension with product shield decompositions. Same-shield invariance holds exactly for groups of exponent two. The pinned Lean declaration result proves only the six defining cyclic data conditions; the global PPT optimality conjecture is not covered.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/BoundEntanglement/SecondFamilyAllDimensions.lean"
+}

@@ -1,0 +1,434 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\newcommand{\proj}[1]{\ket{#1}\bra{#1}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Resolving the all-dimension second-family claim of P\'al et al.\\
+\large Section V, paragraph after Eq.\ (69), p.\ 023101-8,\par
+Phys.\ Rev.\ Research \textbf{3}, 023101 (2021)}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{3 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We establish the assertion that second-family states ``exist for all $d$''
+in P\'al, T\'oth, Bene and V\'ertesi, Section V, paragraph after Eq.\ (69),
+p.\ 023101-8 of \emph{Phys.\ Rev.\ Research} \textbf{3}, 023101 (2021).
+Cyclic permutation matrices and sum-indexed shield vectors satisfy all
+of the defining conditions for every integer $d\geq2$.
+Their partial-transpose identity gives explicit positive-partial-transpose
+states on $\mathbb C^{2d}\otimes\mathbb C^{2d}$, of ranks $d^2+2d$
+and $2d^2+d$ before and after partial transposition, with quantum Fisher
+information $16\sqrt d/(1+\sqrt d)$ for the Hamiltonian of that paper.
+The construction extends to every finite abelian group; its shield
+projectors have explicit product decompositions.
+We also obtain the white-noise threshold and the exact dependence on two
+local Hamiltonian weights, extending the source's formulas to every dimension.
+\end{abstract}
+\begin{center}\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+\end{center}
+
+\section{The existence assertion and its cyclic solution}
+
+P\'al et al.\ distinguish two families of metrologically useful bound
+entangled states~\cite{Pal2021}. Their first family uses a private-state
+construction~\cite{Badziag2014}; earlier numerical examples of metrologically
+useful PPT states appear in~\cite{Toth2018}.
+For the second family, Section V of~\cite{Pal2021} gives the defining
+conditions in Eqs.\ (51)--(64), analytical examples for $d=3$ and $d=2^n$,
+and the statement after Eq.\ (69), on p.\ 023101-8:
+``However, we believe that such states exist for all $d$.''
+We use the corrected journal version of 8 June 2021; see also
+\href{https://arxiv.org/abs/2002.12409v4}{arXiv:2002.12409v4},
+25 August 2021, Section V, after Eq.\ (69).
+The distinction matters: having orthogonal matrices alone does not supply
+the shield vectors required by Eq.\ (64).
+
+All shield indices below belong to $\mathbb Z_d$, with addition and
+subtraction modulo $d$. On $\mathbb C^d\otimes\mathbb C^d$, write
+\[
+  (\ket{i,j}\bra{k,\ell})^{\Gamma_{B'}}=
+     \ket{i,\ell}\bra{k,j}.
+\]
+
+\begin{theorem}\label{thm:cyclic}
+For every integer $d\geq2$, the following data satisfy
+Eqs.\ (52), (57)--(60), (63), and (64) of~\cite{Pal2021}:
+\begin{align}
+ Q^k_{ij}&=\mathbf1_{\{j=i+k\}}, &
+ \mu_{ij}&=j-i, & S_{ij}&=1, & N_m&=d,\label{eq:data}\\
+ \ket{\overline q_m}&=\ket{m,m}, &
+ \ket{t_m}&=\frac1{\sqrt d}\sum_i\ket{i,i+m}, &
+ \ket{s_m}&=\frac1{\sqrt d}\sum_i\ket{i,m-i}.
+ \label{eq:shield}
+\end{align}
+Here $\ket{\overline q_m}$ has key label $10$ and
+$\ket{t_m},\ket{s_m}$ have key label $01$ when inserted into the
+four-partite formulas. In particular,
+\begin{equation}\label{eq:ptshield}
+ \left(\sum_m\proj{s_m}\right)^{\Gamma_{B'}}
+       =\sum_m\proj{t_m}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For fixed $k$, the map $i\mapsto i+k$ is a permutation, so
+$(Q^k)^TQ^k=I_d$. With
+$\ket{q_{ij}}=\sum_k Q^k_{ij}\ket{k,k}$, we have
+$\ket{q_{ij}}=\ket{j-i,j-i}=S_{ij}\ket{\overline q_{\mu_{ij}}}$.
+The vectors $\ket{\overline q_m}$ are orthonormal.
+The fiber $\{(i,j):j-i=m\}$ consists of the $d$ pairs $(i,i+m)$.
+Thus $N_m=d$ and $S_{ij}^2=d/N_{\mu_{ij}}=1$, including the
+multiplicity requirement of Eq.\ (60) of~\cite{Pal2021}.
+Equation~\eqref{eq:shield} for $t_m$ is exactly that paper's Eq.\ (63).
+
+The support sets $\{(i,m-i):i\in\mathbb Z_d\}$ are disjoint as $m$
+varies, and each has size $d$. Hence the $s_m$ are orthonormal;
+the same argument applies to the $t_m$.
+It remains to prove the partial-transpose condition. Its matrix entries are
+\begin{align*}
+ \bra{i,j}\left(\sum_m\proj{s_m}\right)^{\Gamma_{B'}}\ket{k,\ell}
+ &=\frac1d\,\mathbf1_{\{i+\ell=k+j\}}\\
+ &=\frac1d\,\mathbf1_{\{j-i=\ell-k\}}\\
+ &=\bra{i,j}\left(\sum_m\proj{t_m}\right)\ket{k,\ell}.
+\end{align*}
+This establishes every required condition. Notice that sum labels on the
+left become difference labels on the right; replacing $s_m$ by $t_m$
+on both sides is generally incorrect.
+\end{proof}
+
+The rank and metrological formulas below are those of~\cite{Pal2021},
+now realized by explicit second-family states for every $d\geq2$.
+The argument supplies the missing all-dimension existence step rather than
+new values for those quantities. Later work~\cite{Lukacs2026} develops
+optimization methods for fixed states and local Hamiltonians; the question
+here is the explicit data required by Eqs.\ (52)--(64).
+
+\section{The resulting PPT states and their spectra}
+
+Use the tensor order $ABA'B'$, where $A,B$ are qubits and $A',B'$ have
+dimension $d$. The bipartition is $(AA'):(BB')$ and $\Gamma$ denotes
+transposition on both of Bob's factors $BB'$.
+Set
+\[
+ p=\frac{\sqrt d}{1+\sqrt d},\qquad
+ q=\frac1{1+\sqrt d},\qquad p+q=1,\quad p=\sqrt d\,q.
+\]
+With the shield vectors of Theorem~\ref{thm:cyclic}, define
+\begin{align}
+ \ket{z_{ij}^{\pm}}&=
+    \frac{\ket{00ij}\pm\ket{11\,j\,(i+j)}}{\sqrt2},\label{eq:z}\\
+ \rho_d&=\frac{p}{d^2}\sum_{i,j}\proj{z_{ij}^{+}}
+  +\frac{q}{2d}\sum_m
+       \bigl(\proj{01}_{AB}\otimes\proj{s_m}
+                     +\proj{10mm}\bigr).\label{eq:rho}
+\end{align}
+This is Eq.\ (50) of~\cite{Pal2021} with the explicit data above.
+The vectors in its three sums are orthonormal: the key sectors separate
+the last two sums from the first, the $s_m$ are orthonormal, and
+$(i,j)\mapsto(j,i+j)$ is a bijection. Consequently $\rho_d$ is positive,
+has trace $p+q/2+q/2=1$, and
+\begin{equation}\label{eq:spectrum}
+ \operatorname{spec}_{>0}(\rho_d)=
+ \left\{\frac{p}{d^2}\ [d^2],\quad\frac{q}{2d}\ [2d]\right\}.
+\end{equation}
+Brackets indicate multiplicities.
+
+Here is a direct positive decomposition of its partial transpose.
+Put
+\[
+ \ket{u_m}=\ket{01}_{AB}\otimes\ket{t_m},\qquad
+ \ket{r_m}=\ket{10mm},\qquad
+ \ket{w_m}=\frac{\ket{u_m}+\ket{r_m}}{\sqrt2}.
+\]
+Expanding~\eqref{eq:z}, transposing $BB'$, and
+using~\eqref{eq:ptshield} gives
+\begin{align}
+ \rho_d^\Gamma={}&\frac{p}{2d^2}\sum_{i,j}
+       \bigl(\proj{00ij}+\proj{11ij}\bigr)\nonumber\\
+ &+\frac{q}{2d}\sum_m
+       \bigl(\proj{u_m}+\proj{r_m}
+             +\ket{u_m}\bra{r_m}+\ket{r_m}\bra{u_m}\bigr)\nonumber\\
+ ={}&\frac{p}{2d^2}\sum_{i,j}
+       \bigl(\proj{00ij}+\proj{11ij}\bigr)
+      +\frac qd\sum_m\proj{w_m}.\label{eq:rhoPT}
+\end{align}
+For clarity, the off-diagonal terms before collecting them are
+\[
+ \frac{p}{2d^2}\sum_{i,j}
+ \bigl(\ket{01\,i\,(i+j)}\bra{10jj}+\mathrm{h.c.}\bigr)
+ =\frac{p}{2d^{3/2}}\sum_j
+       \bigl(\ket{u_j}\bra{r_j}+\mathrm{h.c.}\bigr),
+\]
+and $p/(2d^{3/2})=q/(2d)$. All vectors in the final
+decomposition~\eqref{eq:rhoPT} are orthonormal. Therefore $\rho_d$ is PPT and
+\begin{align}
+ \operatorname{spec}_{>0}(\rho_d^\Gamma)
+   &=\left\{\frac{p}{2d^2}\ [2d^2],\quad\frac qd\ [d]\right\},\\
+ \rank\rho_d&=d^2+2d, & \rank\rho_d^\Gamma&=2d^2+d.
+ \label{eq:ranks}
+\end{align}
+Since these ranks differ for $d\geq2$, the full state is not
+partial-transpose invariant, including when $d=2$.
+
+\section{Metrological and white-noise consequences}
+
+The Hamiltonian of Eq.\ (3) of~\cite{Pal2021} is
+\[
+ H=(Z_A\otimes I_B+I_A\otimes Z_B)\otimes I_{A'B'},
+ \qquad Z=\operatorname{diag}(1,-1).
+\]
+Use the spectral formula for quantum Fisher information in Eq.\ (1)
+of~\cite{Pal2021},
+with terms of zero denominator omitted:
+\begin{equation}\label{eq:FQ}
+ F_Q(\rho,H)=2\sum_{\alpha,\beta:\lambda_\alpha+\lambda_\beta>0}
+ \frac{(\lambda_\alpha-\lambda_\beta)^2}
+ {\lambda_\alpha+\lambda_\beta}
+ |\bra{\alpha}H\ket{\beta}|^2.
+\end{equation}
+We have $H\ket{z_{ij}^{+}}=2\ket{z_{ij}^{-}}$ and
+$H\ket{z_{ij}^{-}}=2\ket{z_{ij}^{+}}$.
+The $z^-_{ij}$ have eigenvalue zero under $\rho_d$.
+These pairs span the entire $00\oplus11$ key sector, while $H$ vanishes
+on the $01\oplus10$ sector. Thus there are exactly $2d^2$ nonzero
+ordered terms in~\eqref{eq:FQ}, each with matrix-element square $4$ and
+eigenvalue quotient $p/d^2$. It follows that
+\begin{equation}\label{eq:gain}
+ F_Q(\rho_d,H)=16p=\frac{16\sqrt d}{1+\sqrt d},\qquad
+ \frac{F_Q(\rho_d,H)}8=\frac{2\sqrt d}{1+\sqrt d}.
+\end{equation}
+For a pure product state across $(AA'):(BB')$,
+$F_Q=4\operatorname{Var}H\leq4(1+1)=8$.
+Convexity of $F_Q$ gives the same upper bound for every separable state;
+it is attained by suitable product superpositions.
+Since $p>1/2$ for $d\geq2$, $\rho_d$ is entangled.
+Its PPT property makes this entanglement nondistillable~\cite{Horodecki1998}.
+Moreover,
+\[
+ \Tr(\rho_d H)=0,\qquad \Tr(\rho_d H^2)=4p,\qquad
+ F_Q(\rho_d,H)=4\operatorname{Var}_{\rho_d}H.
+\]
+These establish Observations 1, 2 and 5 of~\cite{Pal2021} for the cyclic
+second-family states in every dimension. Since
+$F_Q(\sigma,H)\leq4\operatorname{Var}_\sigma H\leq16$ for every state
+$\sigma$, the gain $2p$ tends to the universal ceiling $2$.
+The ceiling is attained by a Bell pair on $AB$ with any independent shield
+state, as in Appendix F, Observation 7, of~\cite{Pal2021}.
+
+For $0\leq v\leq1$, let
+$\rho_{d,v}=v\rho_d+(1-v)I_{4d^2}/(4d^2)$.
+The eigenvectors stay the same; in each $z^+,z^-$ pair the eigenvalues are
+\[
+ a=\frac{vp}{d^2}+\frac{1-v}{4d^2},\qquad
+ b=\frac{1-v}{4d^2}.
+\]
+Applying~\eqref{eq:FQ} to those same pairs gives
+\begin{equation}\label{eq:noise}
+ F_Q(\rho_{d,v},H)
+ =\frac{16v^2p^2}{vp+(1-v)/2}
+ =\frac{2pv^2}{1+(2p-1)v}\,F_Q(\rho_d,H).
+\end{equation}
+The denominator is positive on the entire interval, including $v=0$.
+This is Observation 3, Eq.\ (11) of~\cite{Pal2021}, now instantiated
+by explicit second-family states for every $d\geq2$.
+
+\begin{corollary}[White-noise threshold]\label{cor:noise}
+For $p=\sqrt d/(1+\sqrt d)$, the state $\rho_{d,v}$ has Fisher
+information strictly above the separable bound if and only if
+\begin{equation}\label{eq:threshold}
+ v>v_*(d):=\frac{(2p-1)+\sqrt{(2p-1)^2+16p^2}}{8p^2}.
+\end{equation}
+The threshold satisfies $0<v_*(d)<1$. The largest white-noise fraction
+at the boundary, $r_*(d)=1-v_*(d)$, increases with $d$ and tends to
+$(7-\sqrt{17})/8$.
+\end{corollary}
+\begin{proof}
+Equation~\eqref{eq:noise} exceeds $8$ exactly when
+$2p^2v^2-(p-\tfrac12)v-\tfrac12>0$.
+This polynomial has one positive root, given by~\eqref{eq:threshold};
+its values at $0$ and $1$ are negative and positive, respectively.
+For fixed $v>0$, the expression in~\eqref{eq:noise} strictly increases
+with $p$, so $v_*$ decreases as $d$ increases. Substituting $p\to1$
+gives the limit. These are Eqs.\ (48)--(49) of~\cite{Pal2021},
+applied to the explicit second family in every dimension.
+\end{proof}
+
+\begin{corollary}[Two local weights]\label{cor:weights}
+For real $c_1,c_2$ not both zero, put
+$H_c=(c_1Z_A+c_2Z_B)\otimes I_{A'B'}$. Then
+\begin{align}
+ F_Q(\rho_d,H_c)&=4p(c_1+c_2)^2,\\
+ F_Q^{\rm sep}(H_c)&=4(c_1^2+c_2^2),\\
+ g_c(\rho_d)&=p\frac{(c_1+c_2)^2}{c_1^2+c_2^2}\leq2p,\\
+ 4\operatorname{Var}_{\rho_d}H_c-F_Q(\rho_d,H_c)
+   &=4q(c_1-c_2)^2.\label{eq:weights}
+\end{align}
+Both equality in the gain bound and saturation of the variance bound
+hold exactly when $c_1=c_2$. The noisy states satisfy
+\[
+ F_Q(\rho_{d,v},H_c)
+ =\frac{2pv^2}{1+(2p-1)v}\,F_Q(\rho_d,H_c).
+\]
+\end{corollary}
+\begin{proof}
+On the $z^+,z^-$ pair, $H_c$ interchanges the two vectors with
+coefficient $c_1+c_2$. All other eigenvectors of $\rho_d$ are
+eigenvectors of $H_c$, because the latter is constant on each of
+the $01$ and $10$ key sectors. Thus the spectral sum gives the first
+formula. The sharp product-state variance bound gives the second.
+The gain bound follows from $(c_1-c_2)^2\geq0$.
+The key-sector probabilities are $p/2,p/2,q/2,q/2$, so
+$\langle H_c\rangle=0$ and
+$\langle H_c^2\rangle=p(c_1+c_2)^2+q(c_1-c_2)^2$.
+The white-noise formula uses the unchanged pairs of eigenvectors.
+This proves the equal-weight comparison in Section VI of~\cite{Pal2021}
+for this state; it does not optimize over all local Hamiltonians or PPT states.
+\end{proof}
+
+\section{Abelian groups and coverage}
+
+\begin{corollary}\label{cor:group}
+Let $G$ be any finite abelian group of order $d\geq2$.
+Replacing $\mathbb Z_d$ by $G$ in~\eqref{eq:data}--\eqref{eq:shield}
+and~\eqref{eq:z}--\eqref{eq:rho} gives the same conclusions.
+Writing $P_s=\sum_m\proj{s_m}$ and $P_t=\sum_m\proj{t_m}$,
+both $P_s/d$ and $P_t/d$ are separable states across $A':B'$. Moreover,
+$P_t^{\Gamma_{B'}}=P_t$ if and only if $2g=0$ for every $g\in G$;
+in that case one may take $s_m=t_m$.
+\end{corollary}
+\begin{proof}
+Translation by any group element is a permutation, each sum or difference
+fiber has $d$ pairs, and the equivalence
+$i+\ell=k+j\Longleftrightarrow j-i=\ell-k$ holds in every abelian group.
+These are all the group identities used above. For a character
+$\chi\in\widehat G$, let
+$\ket\chi=d^{-1/2}\sum_{i\in G}\chi(i)\ket i$.
+Character orthogonality gives the product decompositions
+\[
+ P_s=\sum_{\chi\in\widehat G}\proj\chi\otimes\proj\chi,
+ \qquad
+ P_t=\sum_{\chi\in\widehat G}\proj\chi\otimes\proj{\overline\chi}.
+\]
+For example, the first matrix entry is
+$d^{-2}\sum_\chi\chi(i+j-k-\ell)=d^{-1}\mathbf1_{i+j=k+\ell}$,
+exactly the entry of $P_s$; the second uses $i-j-k+\ell$ instead.
+The character sum identity follows by writing $G$ as a product of cyclic
+groups and summing a geometric series on each factor.
+Transposition conjugates the second character, giving the required identity.
+If $2g=0$ for every $g$,
+then $m-i=m+i$, so the two shield vectors coincide.
+Conversely, $\bra{0,0}P_t\ket{g,g}=1/d$, whereas
+$\bra{0,0}P_t^{\Gamma_{B'}}\ket{g,g}$ equals $1/d$ precisely if
+$2g=0$. Invariance therefore forces exponent two.
+For $G=(\mathbb Z_2)^n$, the translation matrices are the tensor products
+of $I_2$ and Pauli $X$, recovering Appendix G.2 and Observation 8
+of~\cite{Pal2021}.
+\end{proof}
+
+\noindent
+The coverage below separates the existence assertion from the paper's
+different global optimization conjecture.
+\begin{center}\small
+\begin{tabular}{@{}p{0.43\linewidth}p{0.51\linewidth}@{}}
+\toprule
+Item in P\'al et al.~\cite{Pal2021} & Coverage\\
+\midrule
+Sec.\ V after Eq.\ (69): all-$d$ second-family existence
+ & Proved: Theorem~\ref{thm:cyclic}, every $d\geq2$.\\[3pt]
+Eqs.\ (6), (7); Observations 1--3 and 5
+ & Proved: both ranks, Fisher information, variance equality and white-noise
+ formula, every $d\geq2$; source formulas retained.\\[3pt]
+Sec.\ IV D, Eqs.\ (48)--(49); Sec.\ V last paragraph
+ & Proved: Corollary~\ref{cor:noise}, exact noise threshold and limit.\\[3pt]
+Sec.\ VI, Eq.\ (80), equal vs.\ unequal weights
+ & Proved for $H_c$ and this state: Corollary~\ref{cor:weights}.
+ Arbitrary local-Hamiltonian optimization is not covered.\\[3pt]
+Appendix G.1: $d=3$ example
+ & Prior proof cited for the source example; Theorem~\ref{thm:cyclic}
+ gives another example. Equivalence is not covered.\\[3pt]
+Appendix G.2; Observation 8
+ & Proved: recovered and extended by Corollary~\ref{cor:group}.
+ Same-shield invariance holds exactly for exponent-two groups.\\[3pt]
+Appendix F, Observation 7
+ & Prior proof cited; the bound $16$ and its attainment are also derived above.\\[3pt]
+First family: Sec.\ IV, Observation 4; Appendices A, B, E, Observation 6
+ & Prior proofs cited in~\cite{Pal2021}; no new first-family result.\\[3pt]
+Conjecture 1: maximal Fisher information among all PPT states
+ & Not covered: no upper bound over all PPT states.\\[3pt]
+Sec.\ VII: extremality and filtering; Appendices C, D: algorithm and fixed points
+ & Not covered.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Mathematical verification coverage.}
+The Lean file
+\href{https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/BoundEntanglement/SecondFamilyAllDimensions.lean}{\texttt{SecondFamilyAllDimensions.lean}}
+contains \texttt{result : claim} in the corresponding namespace. It proves
+existence for every $d\geq2$ of data satisfying
+\texttt{IsSecondFamilyData}: orthogonal $Q^k$, orthonormal
+$\overline q_m$, factorization, the multiplicity equation, orthonormal
+$s_m$, and the shield partial-transpose identity.
+Its witnesses are the cyclic data of Theorem~\ref{thm:cyclic}.
+Second-factor partial transposition is defined in
+\href{https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/AbsolutePPT/Bipartite.lean}{\texttt{Bipartite.lean}}.
+The helper \texttt{sector\_basis} in \texttt{Bipartite.lean} states
+orthonormality of normalized cyclic Fourier vectors;
+\texttt{cyclic\_shield\_orthonormal}
+uses it after relabeling coordinates.
+Written proofs here, rather than \texttt{result}, give the spectra,
+metrology, noise thresholds, two-weight formulas and group and character
+formulas. Exact finite checks supplement these proofs:
+\texttt{verify.py} checks cyclic shield and state partial transposes for
+$2\leq d\leq16$ and shields of five product groups;
+\texttt{corollary\_checks.py} checks weighted spectra, noise and the threshold
+polynomial over the same cyclic range.
+
+\begingroup\small
+\begin{thebibliography}{9}
+\bibitem{Pal2021}
+K. F. P\'al, G. T\'oth, E. Bene, and T. V\'ertesi,
+Bound entangled singlet-like states for quantum metrology,
+\emph{Phys. Rev. Research} \textbf{3}, 023101 (2021), corrected 8 June 2021.
+\href{https://doi.org/10.1103/PhysRevResearch.3.023101}{doi:10.1103/PhysRevResearch.3.023101}.
+
+\bibitem{Badziag2014}
+P. Badzi\k{a}g, K. Horodecki, M. Horodecki, J. Jenkinson, and S. J. Szarek,
+Bound entangled states with extremal properties,
+\emph{Phys. Rev. A} \textbf{90}, 012301 (2014).
+\href{https://doi.org/10.1103/PhysRevA.90.012301}{doi:10.1103/PhysRevA.90.012301}.
+
+\bibitem{Toth2018}
+G. T\'oth and T. V\'ertesi,
+Quantum states with a positive partial transpose are useful for metrology,
+\emph{Phys. Rev. Lett.} \textbf{120}, 020506 (2018).
+\href{https://doi.org/10.1103/PhysRevLett.120.020506}{doi:10.1103/PhysRevLett.120.020506}.
+
+\bibitem{Horodecki1998}
+M. Horodecki, P. Horodecki, and R. Horodecki,
+Mixed-state entanglement and distillation: Is there a ``bound'' entanglement in nature?,
+\emph{Phys. Rev. Lett.} \textbf{80}, 5239--5242 (1998).
+\href{https://doi.org/10.1103/PhysRevLett.80.5239}{doi:10.1103/PhysRevLett.80.5239}.
+
+\bibitem{Lukacs2026}
+\'A. Luk\'acs, R. Tr\'enyi, T. V\'ertesi, and G. T\'oth,
+Iterative optimization in quantum metrology and entanglement theory using
+semidefinite programming,
+\emph{Quantum Sci. Technol.} \textbf{11}, 015042 (2026).
+\href{https://doi.org/10.1088/2058-9565/ae24a6}{doi:10.1088/2058-9565/ae24a6}.
+\end{thebibliography}
+\endgroup
+\end{document}

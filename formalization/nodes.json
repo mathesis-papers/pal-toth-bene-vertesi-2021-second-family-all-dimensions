@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "a2d277ea0980f1230eff2c7e27838372effccb30",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/BoundEntanglement/SecondFamilyAllDimensions.lean"
+      },
+      "lineage": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:s1",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\ket": "\\lvert #1\\rangle",
+        "\\proj": "\\ket{#1}\\bra{#1}",
+        "\\rank": "\\operatorname{rank}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "pal-toth-bene-vertesi-2021-second-family-all-dimensions",
+      "scope": "in_scope",
+      "statement": "For every integer $d\\geq2$, the following data satisfy\nEqs.\\ (52), (57)--(60), (63), and (64) of~\\cite{Pal2021}:\n\\begin{align}\n Q^k_{ij}&=\\mathbf1_{\\{j=i+k\\}}, &\n \\mu_{ij}&=j-i, & S_{ij}&=1, & N_m&=d,\\\\\n \\ket{\\overline q_m}&=\\ket{m,m}, &\n \\ket{t_m}&=\\frac1{\\sqrt d}\\sum_i\\ket{i,i+m}, &\n \\ket{s_m}&=\\frac1{\\sqrt d}\\sum_i\\ket{i,m-i}.\n \n\\end{align}\nHere $\\ket{\\overline q_m}$ has key label $10$ and\n$\\ket{t_m},\\ket{s_m}$ have key label $01$ when inserted into the\nfour-partite formulas. In particular,\n\\begin{equation}\n \\left(\\sum_m\\proj{s_m}\\right)^{\\Gamma_{B'}}\n       =\\sum_m\\proj{t_m}.\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Resolving the all-dimension second-family claim of Pál et al.: Section V, paragraph after Eq. (69), p. 023101-8, Physical Review Research 3, 023101 (2021)",
+      "toolchain": null,
+      "version": 2,
+      "work": "pal-toth-bene-vertesi-2021-second-family-all-dimensions"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a2d277ea0980f1230eff2c7e27838372effccb30",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/BoundEntanglement/SecondFamilyAllDimensions.lean"
+      },
+      "lineage": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:s2",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\ket": "\\lvert #1\\rangle",
+        "\\proj": "\\ket{#1}\\bra{#1}",
+        "\\rank": "\\operatorname{rank}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "pal-toth-bene-vertesi-2021-second-family-all-dimensions",
+      "scope": "in_scope",
+      "statement": "For $p=\\sqrt d/(1+\\sqrt d)$, the state $\\rho_{d,v}$ has Fisher\ninformation strictly above the separable bound if and only if\n\\begin{equation}\n v>v_*(d):=\\frac{(2p-1)+\\sqrt{(2p-1)^2+16p^2}}{8p^2}.\n\\end{equation}\nThe threshold satisfies $0<v_*(d)<1$. The largest white-noise fraction\nat the boundary, $r_*(d)=1-v_*(d)$, increases with $d$ and tends to\n$(7-\\sqrt{17})/8$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Resolving the all-dimension second-family claim of Pál et al.: Section V, paragraph after Eq. (69), p. 023101-8, Physical Review Research 3, 023101 (2021)",
+      "toolchain": null,
+      "version": 2,
+      "work": "pal-toth-bene-vertesi-2021-second-family-all-dimensions"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a2d277ea0980f1230eff2c7e27838372effccb30",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/BoundEntanglement/SecondFamilyAllDimensions.lean"
+      },
+      "lineage": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:s3",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\ket": "\\lvert #1\\rangle",
+        "\\proj": "\\ket{#1}\\bra{#1}",
+        "\\rank": "\\operatorname{rank}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "pal-toth-bene-vertesi-2021-second-family-all-dimensions",
+      "scope": "in_scope",
+      "statement": "For real $c_1,c_2$ not both zero, put\n$H_c=(c_1Z_A+c_2Z_B)\\otimes I_{A'B'}$. Then\n\\begin{align}\n F_Q(\\rho_d,H_c)&=4p(c_1+c_2)^2,\\\\\n F_Q^{\\rm sep}(H_c)&=4(c_1^2+c_2^2),\\\\\n g_c(\\rho_d)&=p\\frac{(c_1+c_2)^2}{c_1^2+c_2^2}\\leq2p,\\\\\n 4\\operatorname{Var}_{\\rho_d}H_c-F_Q(\\rho_d,H_c)\n   &=4q(c_1-c_2)^2.\n\\end{align}\nBoth equality in the gain bound and saturation of the variance bound\nhold exactly when $c_1=c_2$. The noisy states satisfy\n\\[\n F_Q(\\rho_{d,v},H_c)\n =\\frac{2pv^2}{1+(2p-1)v}\\,F_Q(\\rho_d,H_c).\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Resolving the all-dimension second-family claim of Pál et al.: Section V, paragraph after Eq. (69), p. 023101-8, Physical Review Research 3, 023101 (2021)",
+      "toolchain": null,
+      "version": 2,
+      "work": "pal-toth-bene-vertesi-2021-second-family-all-dimensions"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a2d277ea0980f1230eff2c7e27838372effccb30",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/BoundEntanglement/SecondFamilyAllDimensions.lean"
+      },
+      "lineage": "collected:pal-toth-bene-vertesi-2021-second-family-all-dimensions:s4",
+      "macros": {
+        "\\Tr": "\\operatorname{Tr}",
+        "\\bra": "\\langle #1\\rvert",
+        "\\ket": "\\lvert #1\\rangle",
+        "\\proj": "\\ket{#1}\\bra{#1}",
+        "\\rank": "\\operatorname{rank}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "pal-toth-bene-vertesi-2021-second-family-all-dimensions",
+      "scope": "in_scope",
+      "statement": "Let $G$ be any finite abelian group of order $d\\geq2$.\nReplacing $\\mathbb Z_d$ by $G$ in~\\eqref{eq:data}--\\eqref{eq:shield}\nand~\\eqref{eq:z}--\\eqref{eq:rho} gives the same conclusions.\nWriting $P_s=\\sum_m\\proj{s_m}$ and $P_t=\\sum_m\\proj{t_m}$,\nboth $P_s/d$ and $P_t/d$ are separable states across $A':B'$. Moreover,\n$P_t^{\\Gamma_{B'}}=P_t$ if and only if $2g=0$ for every $g\\in G$;\nin that case one may take $s_m=t_m$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Resolving the all-dimension second-family claim of Pál et al.: Section V, paragraph after Eq. (69), p. 023101-8, Physical Review Research 3, 023101 (2021)",
+      "toolchain": null,
+      "version": 2,
+      "work": "pal-toth-bene-vertesi-2021-second-family-all-dimensions"
+    }
+  ]
+}
