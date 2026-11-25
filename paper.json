@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.23970199",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.23970200",
     "lean_source": {
       "revision": "a2d277ea0980f1230eff2c7e27838372effccb30",
       "url": "https://github.com/the-omega-institute/trureturing/blob/a2d277ea0980f1230eff2c7e27838372effccb30/D5/S3/Quantum/Entanglement/BoundEntanglement/SecondFamilyAllDimensions.lean"
